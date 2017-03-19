@@ -1,0 +1,33 @@
+#include"header.h"                                                              
+st del_middle(st head,int pos)                                                  
+{                                                                               
+    st cur_node=NULL;                                                           
+    st new_node=NULL;                                                           
+    int len=1;                                                                
+    cur_node=MEM;                                                               
+    new_node=MEM;                                                               
+
+    cur_node=head; 
+	printf("%d\n",pos);                                                               
+    if(pos==1){                                                                 
+          cur_node->next=NULL;                                                  
+                  free(cur_node);                                                
+        }
+                                                                                
+       else                                                                     
+    {                                                                           
+        
+	while(len != (pos/2)) {
+		len++;
+		cur_node = cur_node->next;
+			
+}
+		cur_node->next = (cur_node->next)-> next;
+		(cur_node->next)->prev=cur_node;
+
+		printf("%d\n",len);
+		printf("%d\n",pos);                                                             
+    }                                                                               
+    printf("node created\n");                                                   
+    return head;                                                                
+}                                                 

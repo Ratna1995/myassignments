@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	header/header.h	4;"	d
+atoint	source/atoi.c	/^int atoint(char *ch)$/;"	f
+create_node	source/create.c	/^void create_node(int val)$/;"	f
+data	header/header.h	/^	int data;$/;"	m	struct:node
+deletion	source/deletion.c	/^void deletion(int val)$/;"	f
+ele	header/header.h	/^char ele[MAX];$/;"	v
+inorder	source/inorder.c	/^void inorder(tree_node *root)$/;"	f
+lchild	header/header.h	/^	struct node *lchild;$/;"	m	struct:node	typeref:struct:node::node
+main	source/main.c	/^int main()$/;"	f
+node	header/header.h	/^typedef struct node {$/;"	s
+postorder	source/postorder.c	/^void postorder(tree_node *root)                                                   $/;"	f
+preorder	source/preorder.c	/^void preorder(tree_node *root)                                                   $/;"	f
+rchild	header/header.h	/^	struct node *rchild;$/;"	m	struct:node	typeref:struct:node::node
+root	header/header.h	/^tree_node *root;$/;"	v
+root	source/main.c	/^struct node *root = NULL;$/;"	v	typeref:struct:node
+tree_node	header/header.h	/^}tree_node;$/;"	t	typeref:struct:node
+val	header/header.h	/^int val;$/;"	v

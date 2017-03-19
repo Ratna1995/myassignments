@@ -1,0 +1,161 @@
+#include<stdio.h>
+
+#if 0
+	
+int main()
+{
+	printf("%d\n",sizeof('a'));
+	printf("%d\n", sizeof("a"));
+	return 0;
+}
+#endif
+
+#if 0
+
+int main()
+{
+	int x = 513;
+	char *p;
+	p = (char *)&x;
+	printf("%d\n", x);
+	p = p + 2;	
+	*p = 1;
+	printf("%d\n", x);
+	return 0;
+}
+#endif
+
+#if 0
+int main()
+{
+	if(!printf("hello")){
+	}
+	else
+		printf("world");
+	return 0;
+}
+#endif
+
+#if 0
+int main()
+{
+	int a = 513;
+	char n = a;
+	printf("%d\n",n);
+	return 0;
+}
+#endif
+
+#if 0
+int main()
+{
+	int i = 0;
+	int j;
+	switch(i)
+	{
+		case '0' : 
+					printf("global\n");
+					break;
+		case j : printf("edge\n");
+					break;
+		default: printf("global edge\n");
+	}
+	return 0;
+}
+#endif
+
+#if 0
+int f(int);
+
+int main()
+{
+	int n = 1;
+	n = f(n);
+		
+	printf("%d\n", n);
+	return 0;
+}
+int f(int n)
+{
+	static int i = 1;
+	if( n >= 5)
+		return n;
+	n = n + i;
+	i++;
+
+	return f(n);
+}
+#endif
+
+#if 0
+
+int main()
+{
+	int x = 5;
+	int *p;
+	
+	p = 5;
+	
+	printf("the value of p:%p\n", p);
+	printf("the value of *p:%d\n", *p);
+	return 0;
+}
+#endif
+
+#if 0
+
+int main()
+{
+	int i = 0;
+	char ch = 'A';
+	do{
+		putchar(ch);
+	}while(i++ < 5 || ++ch <= 'F');
+	printf("\n");
+}
+#endif
+
+#if 0
+
+int n=10;
+int main()
+{
+	int i, n =n;
+	//for(i = 0; -i < n; i--)
+		printf("%d",n);
+	getchar();	
+	return 0;
+}
+#endif
+
+#if 0
+//extern int var;
+int main()
+{
+	{
+	int var = 10;
+	}
+	{
+	printf("%d", var);
+	}
+	return 0;
+}
+#endif
+
+#if 1
+int main()
+{
+	int x = 1, y = 2, z = 3;
+	printf("x=%d y=%d z=%d\n", x, y, z);
+	{
+		int x = 10;
+		float y = 20;
+			printf("x = %d z = %d y = %d\n", x, z, y);
+			{
+				int z = 100;
+				printf("x = %d z = %d y = %d", x, z, y);
+			}
+	}
+	return 0;
+}
+#endif

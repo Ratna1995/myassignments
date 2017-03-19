@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define MAX 30
+
+void str_cpy(char *, char *);
+int strleng(char );                                                             
+int validation(char *); 

@@ -1,0 +1,31 @@
+#include"header.h"
+
+st del_at_end(st head)
+{
+	st cur_node=NULL;
+	st new_node=NULL;
+	cur_node=MEM;
+	new_node=MEM;
+
+	if(head == NULL)
+		printf("list empty");
+
+	else
+	{
+		cur_node=head;
+		while(cur_node->next != NULL) {
+			new_node=cur_node;
+			cur_node=cur_node->next;
+			
+			//printf("%d",cur_node->data);
+		}
+		//printf("%d",new_node->data);
+		new_node->next=NULL;
+		cur_node->prev=NULL;
+	}
+	free(cur_node);
+	printf("node deleted\n");
+	return head;
+}
+
+

@@ -1,0 +1,31 @@
+#include"header.h"
+st del_pos(st head,int pos) 
+{                                                                               
+    st cur_node=NULL;                                                           
+    st new_node=NULL;
+	int count=1;                                                  
+    cur_node=MEM;                                                               
+    new_node=MEM;                                                                                                             
+    cur_node=head;                                                             
+    if(pos==1){                                                             
+          head=cur_node->next;
+		  	head->prev=NULL;
+		}
+                                                                                
+       else                                                                     
+    {                                                                                                                                     
+        while(count!=pos){  
+	  new_node=cur_node;                                         
+          cur_node=cur_node->next;
+		  count++;
+		}
+				new_node->next=cur_node->next;
+				(cur_node->next)->prev=new_node;
+       			cur_node->next=NULL;
+				cur_node->prev=NULL;
+    }                                                                           
+    free(cur_node);                                                                           
+    printf("node deleted\n");                                                   
+    return head;                                                                
+}                                                                               
+     

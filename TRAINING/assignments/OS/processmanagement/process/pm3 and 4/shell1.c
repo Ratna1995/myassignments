@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <string.h>
+
+#include <stdlib.h>
+
+#define MAX 64
+
+int main()
+{
+	//while (1) {
+	char *command = NULL;
+	
+	char *argv[10];
+	command = (char *)malloc(sizeof(char)*MAX);
+	
+	//char *path = NULL;
+	
+	//path = (char *)malloc(sizeof(char)*MAX);
+
+	
+	//strcpy(path,"/bin/");
+	
+		while (1) {
+		fgets(command,MAX,stdin);
+		*(command+strlen(command)-1) = '\0';
+
+		if ( !strcmp(command,"exit") )
+			exit(0);
+		strcpy(argv[0],command);
+		argv[1]=NULL;
+	//	strcat(path,command);
+//	}
+		int pid  = fork();
+		if(pid == 0 ){
+		execvp(command,argv);
+		printf("why u came here\n");
+	}
+	
+	else{
+		wait(NULL);
+		printf("child went\n");
+	}
+	}
+	return 0;
+}
+

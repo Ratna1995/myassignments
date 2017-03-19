@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+delete_begin	deletebeg.c	/^csll delete_begin(csll head)\/\/delete at begining$/;"	f
+delete_node	deletenode.c	/^csll delete_node(csll head)\/\/called function to delete node                     $/;"	f
+display	display.c	/^void display(csll head)\/\/to display the list of elements                         $/;"	f
+insert_begin	insertbeg.c	/^csll insert_begin(csll head)\/\/insert at begining$/;"	f
+insert_end	insertend.c	/^csll insert_end(csll head)\/\/function to insert at end                                                    $/;"	f
+insert_node	insertnode.c	/^csll insert_node(csll head)\/\/called function to insert node$/;"	f
+isvalid	validation.c	/^int isvalid( char *str )$/;"	f
+main	main.c	/^int main()                                                                      $/;"	f
+rem_enter	rem_enter.c	/^void rem_enter(char *str)$/;"	f
+str_len	str_len.c	/^int str_len ( char *str )$/;"	f

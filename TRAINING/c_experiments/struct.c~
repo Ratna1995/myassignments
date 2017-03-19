@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct batch
+{
+	char b_id[5];
+	char name[30];
+	int emp_id;
+}e1, e2, college[2];
+
+int main()
+{
+	int i;
+	e1 = {"CR17", "ratna", 30851};
+	e2 = {"cr16", "anku", 30445};
+
+	printf("enter the values\n");
+	for(i = 0; i < 2; i++){
+		scanf("%s", college[i].b_id);
+		scanf("%s", college[i].name);
+		scanf("%d", &college[i].emp_id);
+	}
+	printf("%s\n", college[1].b_id);
+	printf("%s\n", college[1].name);
+	printf("%d\n", college[1].emp_id);
+	
+}		

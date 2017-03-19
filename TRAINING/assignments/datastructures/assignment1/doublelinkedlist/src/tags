@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+atoint	atoi.c	/^int atoint(char *ch)$/;"	f
+delete_begin	delete_begin.c	/^dll *delete_begin(dll *head)$/;"	f
+delete_end	delete_end.c	/^dll *delete_end(dll *head)$/;"	f
+delete_mid	delete_mid.c	/^dll *delete_mid(dll *head)$/;"	f
+display	display.c	/^void display(dll *head)$/;"	f
+insert_begin	insert_beg.c	/^dll *insert_begin(dll *head) \/\/insert at the begining$/;"	f
+insert_end	insert_end.c	/^dll *insert_end(dll *head) \/\/function to insert at end$/;"	f
+insert_mid	insert_mid.c	/^dll *insert_mid(dll *head) \/\/function to insert at end$/;"	f
+main	main.c	/^int main() $/;"	f

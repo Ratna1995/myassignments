@@ -1,0 +1,24 @@
+#include"header.h"                                                              
+st insert_aft_pos(st head,int pos)                                                  
+{                                                                               
+    st cur_node=NULL;                                                           
+    st new_node=NULL;                                                           
+    int count=1;                                                          
+    cur_node=MEM;                                                               
+    new_node=MEM;                                                               
+                                                                                
+    printf("enter the data to be inserted\n");                                  
+    scanf("%d",&new_node->data);                                                
+        
+        cur_node=head;                                                          
+        while(count!=pos){                                                    
+          cur_node=cur_node->next;                                              
+          count++;                                                              
+        }                                                                       
+                new_node->next=cur_node->next;
+				new_node->prev=cur_node;
+                cur_node->next=new_node;                                                                                
+                                                                                
+    printf("node created\n");                                                   
+    return head;                                                                
+}                    

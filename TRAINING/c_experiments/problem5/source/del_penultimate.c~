@@ -1,0 +1,27 @@
+#include"header.h"
+
+st del_penultimate(st head)
+{
+	st cur_node=NULL;
+	st temp_node=NULL;
+	cur_node=MEM;
+	temp_node=MEM;
+	cur_node = head;
+	
+	while(((cur_node->next)->next)->next != NULL){
+		//if(cur_node->next==NULL)
+		//	break;
+		//temp_node=cur_node;
+		cur_node=cur_node->next;
+		
+	}
+	cur_node->next=(cur_node->next)->next;
+	(cur_node->next)->prev=cur_node;
+	//new_node->next=cur_node->next;
+	//cur_node->next=new_node;
+	//printf("%d",cur_node->data);
+	printf("\n");
+	
+	return head;
+}
+

@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	header/header.h	4;"	d
+atoint	source/atoi.c	/^int atoint(char *ch)$/;"	f
+data	header/header.h	/^    int data;                                                                   $/;"	m	struct:node
+del_middle	source/del_middle.c	/^void del_middle(int val)                                                     $/;"	f
+del_penult	source/del_penult.c	/^void del_penult()                                                $/;"	f
+delete	source/delete.c	/^void delete()$/;"	f
+delete_after	source/delete_after.c	/^void delete_after()                                                      $/;"	f
+delete_after_node	source/delete_after_ele.c	/^void delete_after_node()                                                 $/;"	f
+delete_bef	source/delete_bef.c	/^void delete_bef()                                                        $/;"	f
+delete_bef_node	source/delete_bef_ele.c	/^void delete_bef_node()                                                   $/;"	f
+delete_begin	source/delete_begin.c	/^void delete_begin()$/;"	f
+delete_end	source/delete_end.c	/^void delete_end()$/;"	f
+delete_pos	source/delete_pos.c	/^void delete_pos()                                                        $/;"	f
+delpos	source/delpos.c	/^void delpos(int pos)                                                 $/;"	f
+display	source/display.c	/^void display()$/;"	f
+head	header/header.h	/^struct node *head;$/;"	v	typeref:struct:node
+insert	source/insert.c	/^void insert()$/;"	f
+insert_after	source/insert_after.c	/^void insert_after(int val)$/;"	f
+insert_after_node	source/insert_after_ele.c	/^void insert_after_node(int val)                                                   $/;"	f
+insert_bef	source/insert_bef.c	/^void insert_bef(int val)                                                        $/;"	f
+insert_bef_node	source/insert_bef_ele.c	/^void insert_bef_node(int val)$/;"	f
+insert_begin	source/insert_begin.c	/^void insert_begin(int val)$/;"	f
+insert_end	source/insert_end.c	/^void insert_end(int val)$/;"	f
+insert_middle	source/insert_middle.c	/^void insert_middle(int val)$/;"	f
+insert_penultimate	source/insert_penult.c	/^void insert_penultimate(int val)                                                     $/;"	f
+insert_pos	source/insert_pos.c	/^void insert_pos(int val)$/;"	f
+main	source/main.c	/^int main()$/;"	f
+next	header/header.h	/^    struct node *next;                                                          $/;"	m	struct:node	typeref:struct:node::node
+node	header/header.h	/^struct node                                                                     $/;"	s
+position	source/position.c	/^void position(int pos, int val)$/;"	f
+val	header/header.h	/^int val;$/;"	v

@@ -1,0 +1,1 @@
+cmd_/home/ratna/TRAINING/assignments/OS/kernel_module/maps/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/ratna/TRAINING/assignments/OS/kernel_module/maps/kmod.ko /home/ratna/TRAINING/assignments/OS/kernel_module/maps/kmod.o /home/ratna/TRAINING/assignments/OS/kernel_module/maps/kmod.mod.o ;  true

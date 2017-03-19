@@ -1,0 +1,1 @@
+cmd_/home/ratna/TRAINING/c_assignments/OS/kernel_module/lsmod/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/ratna/TRAINING/c_assignments/OS/kernel_module/lsmod/kmod.ko /home/ratna/TRAINING/c_assignments/OS/kernel_module/lsmod/kmod.o /home/ratna/TRAINING/c_assignments/OS/kernel_module/lsmod/kmod.mod.o ;  true

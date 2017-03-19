@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+atoint	atoi.c	/^int atoint(char *ch)$/;"	f
+del_middle	del_middle.c	/^void del_middle(int val)                                                     $/;"	f
+del_penult	del_penult.c	/^void del_penult()                                                $/;"	f
+delete	delete.c	/^void delete()$/;"	f
+delete_after	delete_after.c	/^void delete_after()                                                      $/;"	f
+delete_after_node	delete_after_ele.c	/^void delete_after_node()                                                 $/;"	f
+delete_bef	delete_bef.c	/^void delete_bef()                                                        $/;"	f
+delete_bef_node	delete_bef_ele.c	/^void delete_bef_node()                                                   $/;"	f
+delete_begin	delete_begin.c	/^void delete_begin()$/;"	f
+delete_end	delete_end.c	/^void delete_end()$/;"	f
+delete_pos	delete_pos.c	/^void delete_pos()                                                        $/;"	f
+delpos	delpos.c	/^void delpos(int pos)                                                 $/;"	f
+display	display.c	/^void display()$/;"	f
+insert	insert.c	/^void insert()$/;"	f
+insert_after	insert_after.c	/^void insert_after(int val)$/;"	f
+insert_after_node	insert_after_ele.c	/^void insert_after_node(int val)                                                   $/;"	f
+insert_bef	insert_bef.c	/^void insert_bef(int val)                                                        $/;"	f
+insert_bef_node	insert_bef_ele.c	/^void insert_bef_node(int val)$/;"	f
+insert_begin	insert_begin.c	/^void insert_begin(int val)$/;"	f
+insert_end	insert_end.c	/^void insert_end(int val)$/;"	f
+insert_middle	insert_middle.c	/^void insert_middle(int val)$/;"	f
+insert_penultimate	insert_penult.c	/^void insert_penultimate(int val)                                                     $/;"	f
+insert_pos	insert_pos.c	/^void insert_pos(int val)$/;"	f
+main	main.c	/^int main()$/;"	f
+position	position.c	/^void position(int pos, int val)$/;"	f

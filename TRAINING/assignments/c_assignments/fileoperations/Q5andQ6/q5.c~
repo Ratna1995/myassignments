@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct EH
+{
+	unsigned char e_ident[16];
+	short e_type;
+	short e_machine;	
+	int e_version;
+	unsigned int e_entry;
+};
+
+int main()
+{
+	FILE *fp;
+	struct EH eh[10];
+	int i;
+	
+	printf("enter 5 values for EH:\n");
+	for(i = 0; i < 5; i++) {
+		scanf("%s", eh[i].e_ident);
+		scanf("%hi", &eh[i].e_type);
+		scanf("%hi", &eh[i].e_machine);
+		scanf("%d", &eh[i].e_version);
+		scanf("%u", &eh[i].e_entry);
+	}
+	
+/*	printf("print the values");
+	for(i = 0; i < 10; i++) {
+		printf("%s\n", eh[i].e_ident);
+		printf("%d\n", eh[i].e_type);
+		printf("%d\n", eh[i].e_machine);
+		printf("%d\n", eh[i].e_version);
+		printf("%u\n", eh[i].e_entry);
+	}*/
+	
+	if(NULL == (fp = (fopen("info.db", "w+")))) {
+		perror("fopen failed");
+		exit(0);
+	}
+	for(i = 0; i < 5; i++) {
+		if(0 == (fwrite(&eh[i], 10, sizeof(struct EH), fp))) {
+			printf("can't write");
+			exit(0);
+		}
+	}	
+	return 0;
+}
+	
+		

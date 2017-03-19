@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+create_node	create_node.c	/^sl *create_node(int ele, sl *temp)$/;"	f
+d_begin	d_begin.c	/^void d_begin()$/;"	f
+display	disply.c	/^void display()$/;"	f
+head	main.c	/^sl *head = NULL;$/;"	v
+i_begin	i_begin.c	/^void i_begin()$/;"	f
+main	main.c	/^int main()$/;"	f
+my_atoi	my_atoi.c	/^int my_atoi( char *str)$/;"	f
+size	main.c	/^int size = 0;$/;"	v

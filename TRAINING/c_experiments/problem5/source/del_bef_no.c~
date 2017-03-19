@@ -1,0 +1,35 @@
+#include"header.h"
+
+st del_bef_no(st head,int num)
+{
+	st cur_node=NULL;
+	st new_node=NULL;
+	cur_node=MEM;
+	new_node=MEM;
+	
+	cur_node=head;
+
+	if(head == NULL)
+		printf("list empty\n");
+
+	else
+	{
+		
+		while(cur_node->next != NULL) {
+			
+			if((cur_node->next)->data==num)
+				break;
+			new_node=cur_node;
+			cur_node=cur_node->next;
+		}
+		new_node->next=cur_node->next;
+		(cur_node->next)->prev=new_node;
+		cur_node->next=NULL;
+		cur_node->next=NULL;
+	}
+
+	free(cur_node);
+	printf("node deleted\n");
+	return head;
+}
+

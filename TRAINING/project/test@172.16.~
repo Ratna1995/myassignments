@@ -1,0 +1,57 @@
+#! /usr/bin/python
+
+import sqlite3
+
+print "1. create"
+print "2. insert"
+print "3. delete"
+choice = input("Enter your choice: ")
+
+connection_create = sqlite3.connect("EmployeeDB.db")
+print "connection established"
+
+cursor_cursor = connection_create.cursor()
+cursor_cursor.execute("CREATE TABLE IF NOT EXISTS Employee \
+		(EMP_ID TEXT PRIMARY KEY NOT NULL, \
+		NAME TEXT NOT NULL, \
+		SALARY INT);" )
+print "table created"
+if(choice == 0):
+	emp_record = [('30851', 'Ratna', 6000),('30872','Sireesha',6000),('30869','Madhu', 6000)]
+
+	cursor_cursor.executemany("INSERT INTO Employee VALUES (?,?,?)", emp_record)
+
+if(choice == 2):
+	name = raw_input("enter the name of the employee: ")
+	emp_id = raw_input("enter the employee ID: ")
+	salary = input("enter the salary of the employee: ")
+	emp_record = [emp_id,name,salary]
+
+	cursor_cursor.execute("INSERT INTO Employee(emp_id,name,salary) VALUES(?,?,?)",(emp_record))
+
+if(choice == 3):
+	print "1.emp_id"
+	print "2.name"
+	choice = input("enter the choice:")
+	if(choice == 1):
+		emp_id = raw_input("enter the record to be deleted: ")
+		sql = [emp_id]
+		cursor_cursor.execute("DELETE FROM Employee WHERE emp_id = (?)", sql)
+	if(choice == 2):
+		name = raw_input("enter the record name:")
+		sql =[name]
+		cursor_cursor.execute("DELETE FROM Employee WHERE name = (?)", sql)
+	
+if (choice == 4):
+	print "1.update employee details :"
+	choice = input("enter the choice:")
+	print "2.name"
+	print "3.update salary"
+	choice = input(
+sql = """
+SELECT * FROM Employee"""
+cursor_cursor.execute(sql)
+print cursor_cursor.fetchall()
+
+connection_create.commit()
+connection_create.close()
